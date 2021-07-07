@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet">
+        <link href="phone.css" media="screen and (max-width: 1170px)" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/7c43c81f2c.js" crossorigin="anonymous"></script>
+		
+		<title>Portolio</title>
+		
+	</head>
+
+	<body>
+		<!-- start writing your code -->
+	<div class="bg">
+			<div class="icons">
+				<i class="fas fa-home icon " id="0" onclick="myfunction('home', '0')"></i>
+				<i class="fas fa-folder icon active" id="1" onclick="myfunction('works','1')"></i>  
+				<i class="fas fa-envelope icon" id="2" onclick="myfunction('mail','2')"></i>
+				<i class="fab fa-twitter icon" id="3"onclick="myfunction('socialMedia','3')"></i>
+				</div>
+
+		<!-- home section -->
+
+	<section style="display: block" id="home">
+			<div class="home" >
+              <img src="assets/images/me.jpg" id="image">
+			  <div class= name>
+			  <h1>Jane Doe</h1>
+			  <h3>Senior Astral Projectionist</h3>
+			</div>
+			</div>
+			
+		   <div class="footer">
+				<p>&copy Untitled &nbsp &nbsp |&nbsp &nbsp</p>
+			    <p>  Design:<a href="">HTML5 UP</a>  &nbsp &nbsp |&nbsp &nbsp</p>
+				<p>  Demo images:<a href="">Unsplash</a></p>
+			</div>
+		
+	</section>
+	  
+	    <!-- work section -->
+
+	<section style="display: none" id="works">
+     <div class="works">
+		 <div class="work">
+		 <label style="font-family: 'Source Sans Pro', sans-serif; font-size: 40px">Work</label>
+		 <p style="color: #aaaaaa;
+		 font-size: 16px;
+		 font-family: 'Source Sans Pro', sans-serif">Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit, Vestibulum ante ipsum primis in faucibus ultrices posuere cubilia luctus elit interdum.</p>
+		 </div>
+		
+		<div class="images">
+			
+			<div><img src="assets/images/pic01.jpg" class="img"></div>
+			<div><img src="assets/images/pic02.jpg" class="img"></div>
+			<div><img src="assets/images/pic03.jpg" class="img"></div>
+			<div><img src="assets/images/pic04.jpg" class="img"></div>
+			<div><img src="assets/images/pic05.jpg" class="img"></div>
+			<div><img src="assets/images/pic06.jpg" class="img"></div>
+			<div><img src="assets/images/pic07.jpg" class="img"></div>
+			<div><img src="assets/images/pic08.jpg" class="img"></div>
+			<div><img src="assets/images/pic09.jpg" class="img"></div>
+			<div><img src="assets/images/pic10.jpg" class="img"></div>
+			<div><img src="assets/images/pic11.jpg" class="img"></div>
+			<div><img src="assets/images/pic12.jpg" class="img"></div>
+
+			</div>
+	</section>
+
+	    <!-- mail section -->
+
+	<section style="display: none" id="mail">
+	    <div class="mail">
+        <form class="form">
+		   <label style="font-family: 'Source Sans Pro', sans-serif; font-size: 40px">Contact Me</label>
+		   <div  style=" display: flex;flex-direction: row; justify-content: space-between;flex-wrap: wrap ">
+		   <input type="type" placeholder="Name" style="width: 280px">
+		   <input type="email" placeholder="Email" style="width: 280px">
+		   </div>
+		   <input type="text" placeholder="Subject">
+		   <input type="text" placeholder="Message" style="height: 120px;">
+		   <button type="submit" style="background-color: #000000 ; color: white; width: 200px ">Send Message</button>
+	    </form>
+	    </div>
+	</section>
+
+	    <!-- socialMedia section -->
+
+	<section style="display: none" id="socialMedia">
+		<div class="socialMedia">
+			<label style="font-family: 'Source Sans Pro', sans-serif; font-size: 40px">Follow us on twitter<a href=#>@aishwarya  ;D</a></label>
+		</div>
+	</section>
+	</div>
+           
+
+     <script>
+		    function myfunction(id, id2){
+			var icons = document.getElementsByTagName('i');
+		    var section = document.getElementsByTagName('section')
+			var clickedIcon = document.getElementById(id)
+			var icon = document.getElementById(id2)
+
+			for(i=0;i<section.length;i++){
+                   section[i].style.display="none";
+                   icons[i].classList.remove("active")
+				   }
+			clickedIcon.style.display= "block";
+			icons[id2].classList.add("active");
+		}
+	 </script>
+
+
+		</div>
+	</body>
+</html>
