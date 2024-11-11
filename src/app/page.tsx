@@ -6,7 +6,7 @@ import { loadParticles } from "./loadParticles";
 
 export default function Home() {
   useEffect(() => {
-    loadParticles();
+    if (typeof window !== "undefined") loadParticles();
   }, []);
 
   return (
