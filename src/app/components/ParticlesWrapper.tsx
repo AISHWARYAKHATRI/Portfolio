@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect } from "react";
 import "particles.js";
 
@@ -120,16 +119,16 @@ declare global {
   }
 }
 
-const ParticlesComponent: React.FC = () => {
+const ParticlesWrapper = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (typeof window !== "undefined" && window.particlesJS) {
-      window.particlesJS("particles-js", {
+      window.particlesJS("hero-section", {
         particles: {
           number: {
-            value: 25,
+            value: 10,
             density: {
-              enable: true,
-              value_area: 800,
+              enable: false,
+              value_area: 1000,
             },
           },
           color: {
@@ -156,7 +155,7 @@ const ParticlesComponent: React.FC = () => {
             anim: {
               enable: false,
               speed: 1,
-              opacity_min: 0.1,
+              opacity_min: 0.05,
               sync: false,
             },
           },
@@ -179,7 +178,7 @@ const ParticlesComponent: React.FC = () => {
           },
           move: {
             enable: true,
-            speed: 10,
+            speed: 15,
             direction: "none",
             random: false,
             straight: false,
@@ -214,7 +213,7 @@ const ParticlesComponent: React.FC = () => {
             },
             bubble: {
               distance: 800,
-              size: 80,
+              size: 100,
               duration: 2,
               opacity: 8,
               speed: 3,
@@ -236,18 +235,7 @@ const ParticlesComponent: React.FC = () => {
     }
   }, []);
 
-  return (
-    <div id="particles-js" className="w-full h-screen">
-      <div className="absolute text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-        <div className="text-5xl md:text-6xl my-5 font-extrabold xl:text-nowrap">
-          Hi, I&apos;m&nbsp;
-          <span className="bg-gradient-to-r from-pink-500 to-amber-500 text-transparent bg-clip-text py-4">
-            Aishwarya Khatri
-          </span>
-        </div>
-      </div>
-    </div>
-  );
+  return <div>{children}</div>;
 };
 
-export default ParticlesComponent;
+export default ParticlesWrapper;
