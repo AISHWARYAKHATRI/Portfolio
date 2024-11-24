@@ -1,5 +1,5 @@
 import React from "react";
-import { technologies } from "../constants/technologies";
+import { technologies } from "../constants/data";
 import TechCard from "./TechCard";
 
 const Skills = () => {

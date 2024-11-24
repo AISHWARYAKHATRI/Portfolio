@@ -122,7 +122,7 @@ declare global {
 const ParticlesWrapper = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (typeof window !== "undefined" && window.particlesJS) {
-      window.particlesJS("hero-section", {
+      window.particlesJS("portfolio", {
         particles: {
           number: {
             value: 10,
@@ -235,7 +235,7 @@ const ParticlesWrapper = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-  return <div>{children}</div>;
+  return <>{children}</>;
 };
 
 export default ParticlesWrapper;

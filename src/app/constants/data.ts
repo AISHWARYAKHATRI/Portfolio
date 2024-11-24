@@ -75,3 +75,23 @@ export const technologies = [
     logo: "https://www.vectorlogo.zone/logos/github/github-tile.svg",
   },
 ];
+
+export const projects = [
+  {
+    title: "Artsy",
+    description:
+      "A platform for artists to showcase and manage their art, featuring an interactive UI, infinite scroll, and secure authentication.",
+    technologies: ["MongoDB", "ExpressJS", "ReactJS", "Redux", "MUI"],
+    projectImage: "/assets/letsArtsy.png",
+    githubLink: "https://github.com/AISHWARYAKHATRI/artsybackend",
+    liveDemoLink: "https://letsartsy.vercel.app/",
+  },
+  {
+    title: "ChessMate",
+    description:
+      "A real-time web application for playing chess with others, featuring interactive gameplay and seamless user engagement.",
+    technologies: ["MYSQL", "NestJS", "NextJS", "TailwindCSS", "Redux"],
+    projectImage: "/assets/chessMate.png",
+    githubLink: "https://github.com/AISHWARYAKHATRI/Chess-multiplayer-game",
+  },
+];
