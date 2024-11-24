@@ -22,12 +22,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="flex items-start justify-center flex-col">
-      <div className="bg-secondary relative rounded-lg px-8 pt-16 w-full h-full aspect-video overflow-hidden">
+      <div className="bg-secondary relative rounded-lg p-4 pt-8 md:px-8 md:pt-16 w-full h-full aspect-video overflow-hidden">
         <a
           href={liveDemoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute w-[86%] bottom-0"
+          className="bottom-0"
         >
           <Image
             src={projectImage}

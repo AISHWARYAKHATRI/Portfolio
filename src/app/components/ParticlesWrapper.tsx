@@ -125,7 +125,7 @@ const ParticlesWrapper = ({ children }: { children: React.ReactNode }) => {
       window.particlesJS("portfolio", {
         particles: {
           number: {
-            value: 10,
+            value: 5,
             density: {
               enable: false,
               value_area: 1000,
@@ -141,7 +141,7 @@ const ParticlesWrapper = ({ children }: { children: React.ReactNode }) => {
               color: "#000000",
             },
             polygon: {
-              nb_sides: 5,
+              nb_sides: 1,
             },
             image: {
               src: "img/github.svg",
@@ -216,7 +216,7 @@ const ParticlesWrapper = ({ children }: { children: React.ReactNode }) => {
               size: 100,
               duration: 2,
               opacity: 8,
-              speed: 3,
+              speed: 1,
             },
             repulse: {
               distance: 400,
