@@ -4,10 +4,7 @@ import TechCard from "./TechCard";
 
 const Skills = () => {
   return (
-    <section
-      className="h-screen flex justify-start items-start flex-col pt-28"
-      id="skills"
-    >
+    <section className="section-wrapper flex-col" id="skills">
       <div className="flex justify-between items-center gap-8 mb-10 flex-row-reverse w-full">
         <h3 className="text-4xl font-extrabold md:text-6xl header-title">
           Skills<span className="dot"></span>

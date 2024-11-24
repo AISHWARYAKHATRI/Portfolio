@@ -2,12 +2,12 @@ export const technologies = [
   {
     name: "HTML",
     color: "bg-orange-500",
-    logo: "https://www.vectorlogo.zone/logos/w3c/w3c-icon.svg",
+    logo: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
   },
   {
     name: "CSS",
     color: "bg-blue-700",
-    logo: "https://www.vectorlogo.zone/logos/w3c/css3-logo.svg",
+    logo: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg",
   },
   {
     name: "JavaScript",
@@ -24,16 +24,10 @@ export const technologies = [
     color: "bg-blue-500",
     logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
   },
-
-  {
-    name: "Node.js",
-    color: "bg-green-500",
-    logo: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
-  },
   {
     name: "Redux",
     color: "bg-purple-600",
-    logo: "https://www.vectorlogo.zone/logos/redux/redux-icon.svg",
+    logo: "https://www.vectorlogo.zone/logos/js_redux/js_redux-icon.svg",
   },
   {
     name: "AngularJS",
@@ -49,6 +43,16 @@ export const technologies = [
     name: "Bootstrap",
     color: "bg-purple-600",
     logo: "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg",
+  },
+  {
+    name: "Node.js",
+    color: "bg-green-500",
+    logo: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
+  },
+  {
+    name: "Express",
+    color: "bg-green-500",
+    logo: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg",
   },
   {
     name: "MySQL",
