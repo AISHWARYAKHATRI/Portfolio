@@ -1,4 +1,6 @@
 import React from "react";
+import Links from "./Links";
+import { IoArrowForward } from "react-icons/io5";
 
 const AboutMe = () => {
   return (
@@ -12,32 +14,45 @@ const AboutMe = () => {
         </div>
         <div className="font-normal text-justify">
           <p className="text-lg mb-8">
-            Hello! I{`'`}m a passionate{" "}
-            <strong className="text-indigo-600">Frontend Developer</strong> with
-            2 years of experience, specializing in building intuitive and
-            performant web applications. I have a strong foundation in{" "}
+            Hi there! I am a dedicated{" "}
+            <strong className="text-indigo-600">Software Developer</strong> with{" "}
+            <span className="text-indigo-600">2 years</span> of experience in
+            creating dynamic and user-friendly web applications. My expertise
+            lies in technologies like{" "}
             <span className="text-indigo-600">React.js</span>,{" "}
-            <span className="text-indigo-600">Next.js</span>, and{" "}
-            <span className="text-indigo-600">Tailwind CSS</span>, and I&apos;m
-            always eager to learn and explore new technologies to create
-            innovative and scalable solutions.
+            <span className="text-indigo-600">Next.js</span>,{" "}
+            <span className="text-indigo-600">Tailwind CSS</span>,{" "}
+            <span className="text-indigo-600">HTML</span>,{" "}
+            <span className="text-indigo-600">CSS</span>,{" "}
+            <span className="text-indigo-600">JavaScript</span>, and{" "}
+            <span className="text-indigo-600">Redux</span>. I am passionate
+            about building solutions that not only meet client needs but also
+            push the boundaries of design and functionality.
           </p>
           <p className="text-lg mb-8">
-            My journey in software development began with a deep interest in UI
-            design and user experience, and it has grown into a passion for
-            crafting seamless, high-performance applications. I’m experienced in
-            working with cross-functional teams, contributing to both frontend
-            and full-stack projects. I have worked on diverse domains like
-            E-Commerce, AI, and Blockchain, always aiming to deliver projects
-            that not only meet client expectations but also provide users with
-            exceptional experiences.
+            have contributed to projects in diverse domains, including{" "}
+            <strong className="text-indigo-600">
+              AI, Blockchain, E-commerce
+            </strong>
+            , and <strong className="text-indigo-600">Booking Systems</strong>.
+            My work has ranged from designing responsive, pixel-perfect UIs to
+            optimizing performance and implementing efficient architectures. I
+            am committed to learning new technologies and practices to stay
+            ahead in this fast-evolving field. .
           </p>
-          <p className="text-lg ">
-            I&apos;m actively seeking opportunities to leverage my skills in
-            frontend development and explore full-stack development to build
-            next-level digital experiences. Let&apos;s connect and create
-            something amazing together!
+          <p className="text-lg">
+            I am currently seeking opportunities where I can apply my skills to
+            create impactful digital experiences while exploring full-stack
+            development. If you&apos;re looking for a developer who is
+            enthusiastic, detail-oriented, and eager to take on new challenges,
+            let&apos;s connect and collaborate!
           </p>
+        </div>
+        <div className="flex mt-10 items-center gap-5">
+          <span className="text-xl text-primary">
+            My Links <IoArrowForward className="inline" />
+          </span>
+          <Links />
         </div>
       </div>
     </section>

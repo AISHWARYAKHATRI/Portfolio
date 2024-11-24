@@ -12,6 +12,7 @@
   :root {
     --background: #0f0f0f;
     --foreground: #ededed;
+    --dark: #080808;
   }
 }
 
@@ -88,14 +89,6 @@ body {
   font-family: var(--font-poppins-black);
 }
 
-.header-title-sm .dot-sm {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-color: var(--primary);
-  border-radius: 50%;
-}
-
 .font-poppins-black {
   font-family: var(--font-poppins-black);
 }
@@ -126,6 +119,24 @@ body {
 
 @media (max-width: 500px) {
   .section-wrapper {
-    padding-top: 80px;
+    padding-top: 45px;
   }
+}
+
+canvas {
+  height: 100vh !important;
+}
+
+.header-tab-mobile {
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.header-tab-mobile:hover {
+  border-right: 1px solid var(--primary);
 }

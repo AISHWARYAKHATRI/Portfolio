@@ -8,7 +8,7 @@ interface TechCardProps {
 
 const TechCard: React.FC<TechCardProps> = ({ name, color, logo }) => (
   <div
-    className={`min-w-20 h-40 flex ${color} bg-opacity-35 shadow-lg rounded-xl items-center justify-center`}
+    className={`min-w-20 h-40 flex ${color} bg-opacity-35 shadow-lg rounded-xl items-center flex-col justify-center`}
   >
     <div className="relative w-16 h-10">
       <Image
@@ -19,6 +19,7 @@ const TechCard: React.FC<TechCardProps> = ({ name, color, logo }) => (
         priority={false} // Set to true for images above the fold
       />
     </div>
+    <p className="mt-4">{name}</p>
   </div>
 );
 

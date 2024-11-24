@@ -12,6 +12,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "rgb(99, 102, 241)",
+        secondary: "#232323",
+        dark: "var(--dark)",
       },
     },
   },
