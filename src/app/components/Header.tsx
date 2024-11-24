@@ -21,7 +21,7 @@ const Header = () => {
           </span>
         </div>
 
-        <nav className="justify-end md:flex">
+        <nav className="hidden justify-end md:flex">
           <ul className="flex gap-10">
             {navItems.map((item) => (
               <li key={item.href} className="hover:text-primary cursor-pointer">
