@@ -2,14 +2,21 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const poppinsFontBlack = localFont({
+  src: "./fonts/PoppinsBlack.ttf",
+  variable: "--font-poppins-black",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const poppinsFontReg = localFont({
+  src: "./fonts/PoppinsRegular.ttf",
+  variable: "--font-poppins-reg",
+  weight: "100 900",
+});
+
+const sacramento = localFont({
+  src: "./fonts/SacramentoRegular.ttf",
+  variable: "--font-sacramento",
   weight: "100 900",
 });
 
@@ -26,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sacramento.variable} ${poppinsFontBlack.variable} ${poppinsFontReg.variable} antialiased`}
       >
         {children}
       </body>
